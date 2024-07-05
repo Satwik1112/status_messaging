@@ -3,5 +3,6 @@ configs = {
     "port": 1883,
     "username": "",
     "password": "",
-    "datetime_format": "%H:%M:%S"
+    "datetime_format": "%H:%M:%S",
+    "topic": "status"
 }
