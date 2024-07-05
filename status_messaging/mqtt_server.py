@@ -5,10 +5,6 @@ from config import configs
 import paho.mqtt.client as mqtt
 from random import randrange
 
-configs.update({
-    'topic': "status"
-})
-
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
