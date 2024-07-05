@@ -5,7 +5,7 @@ import json
 import time
 
 from uvicorn import run
-from fastapi import FastAPI, File, HTTPException, UploadFile, Form
+from fastapi import FastAPI, HTTPException
 from mqtt_server import mqtt_client, start_mqtt
 from config import configs
 from mongoDB_connection import mycol
