@@ -1,7 +1,7 @@
 configs = {
-    "host": "chimpanzee.rmq.cloudamqp.com",
+    "host": "",
     "port": 1883,
-    "username": "gtyfehtn:gtyfehtn",
-    "password": "BhtZ8Scr_Q-fmOMLnDBQqz8GSMCJc37A",
+    "username": "",
+    "password": "",
     "datetime_format": "%H:%M:%S"
 }
