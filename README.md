@@ -18,5 +18,5 @@ all connections for mqtt_client
 
 main.py
 fast api application which generates status for each second
-endpoint "/" with query string "?start_time=12:57:37&end_time=12:57:52" gives number of states
+endpoint "/" with query string "?start_time=12:57:37&end_time=12:57:52" gives number of status
 endpoint "/delete_records" delete all records in database
