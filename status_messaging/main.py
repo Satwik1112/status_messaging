@@ -56,6 +56,13 @@ async def main(start_time: str = None, end_time: str = None):
     if not start_time and not end_time:
         start_time = "12:57:37"
         end_time = "12:57:52"
+    else:
+        from re import match
+        time_pattern = r"\d{1,2}:\d{1,2}:\d{1,2}"
+        if not match(time_pattern, start_time) or not match(time_pattern, end_time):
+            return {"query_error": "start or end time is not in proper format of 'hh:mm:ss'"}
+    start_time = str(datetime.strptime(start_time, configs["datetime_format"]).time())
+    end_time = str(datetime.strptime(end_time, configs["datetime_format"]).time())
     try:
         for x in mycol.find():
             print({
